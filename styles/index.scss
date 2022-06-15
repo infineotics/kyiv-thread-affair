@@ -6,6 +6,18 @@
 @import './../node_modules/@fortawesome/fontawesome-free/scss/solid';
 @import './../node_modules/@fortawesome/fontawesome-free/scss/brands';
 
+// bootstrap
+// import variant with node_modules alias ~ @import "~boostrap/"
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap-grid';
+@import '~bootstrap/scss/bootstrap-utilities';
+
+// variables
+@import 'variables';
+
+// shared
+@import './shared/index';
+
 body {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;

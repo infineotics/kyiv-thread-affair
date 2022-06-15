@@ -13,7 +13,11 @@ export default function Home() {
         <i className="fa-solid fa-phone"></i>
       </header>
 
-      <main className="content"></main>
+      <main className="content">
+        <div className="badge">20off</div>
+        <div className="badge badge-secondary">signed</div>
+        <div className="badge badge-oversized">%</div>
+      </main>
 
       <footer className="footer"></footer>
     </div>
