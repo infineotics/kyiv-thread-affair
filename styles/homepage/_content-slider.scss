@@ -1,0 +1,59 @@
+.content-slider {
+  height: 624px;
+  background: $gray-primary url('/images/banners/banner-01.jpg') center center /
+    cover no-repeat;
+  color: $white;
+  font-weight: 300;
+
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 24px;
+    position: relative;
+
+    @include media-breakpoint-up('lg') {
+      align-items: flex-start;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 54px;
+      font-weight: 700;
+      margin: 0;
+      line-height: 54px;
+
+      @include media-breakpoint-up('lg') {
+        font-size: 64px;
+        line-height: 64px;
+      }
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: inherit;
+
+      @include media-breakpoint-up('lg') {
+        font-size: 34px;
+        display: flex;
+        text-align: start;
+      }
+    }
+  }
+  &-copy {
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    bottom: 80px;
+    width: 56%;
+
+    @include media-breakpoint-up('lg') {
+      font-size: 14px;
+      text-align: left;
+      width: auto;
+    }
+  }
+}
